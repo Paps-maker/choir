@@ -34,7 +34,7 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-    <!-- header-start -->
+ <!-- header-start -->
     <header>
         <div class="header-area">
             <div id="sticky-header" class="main-header-area">
@@ -55,10 +55,10 @@
                                             <li><a class="active" href="index.html">home</a></li>
                                             <li><a href="about.html">About</a></li>
                                             <li><a href="track.html">tracks</a></li>
-                                           
-                                                
-                                            </li>
                                             
+                                               
+                                            </li>
+                                           
                                             <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </nav>
@@ -85,22 +85,60 @@
     </header>
     <!-- header-end -->
 
-    <!-- slider_area_start -->
-    <div class="slider_area">
-        <div class="d-flex align-items-center single_slider slider_bg_1 overlay2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="text-center slider_text">
-                            <h3>LIGHT BEARERS, TANZANIA </h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- slider_area_end -->
+<!-- HERO SLIDER -->
+<section class="hero">
 
+  <!-- Slide 1 -->
+  <div class="slide active" style="background-image: url('img/li.jpg');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Light Bearers</h1>
+      <p>Tanzania Choir Ministry</p>
+      
+    </div>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide" style="background-image: url('img/li4.jpg');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Worship & Praise</h1>
+      <p>Experience the Presence</p>
+      
+    </div>
+  </div>
+  <!-- Slide 3 -->
+  <div class="slide" style="background-image: url('img/li6.jpg');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Worship & Praise</h1>
+      <p>Experience the Presence</p>
+      
+    </div>
+  </div>
+  <!-- Slide 4 -->
+  <div class="slide" style="background-image: url('img/li13.jpg');">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>Worship & Praise</h1>
+      <p>Experience the Presence</p>
+      
+    </div>
+  </div>
+
+</section>
+<script>
+let slides = document.querySelectorAll(".slide");
+let index = 0;
+
+function showSlide() {
+  slides.forEach(slide => slide.classList.remove("active"));
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}
+
+setInterval(showSlide, 4000);
+</script>
     <!-- music_area  -->
     <div class="music_area">
         <div class="container">
