@@ -3134,12 +3134,12 @@ h3 {
 
 /* line 1, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
 .bradcam_bg_1 {
-  background-image: url(../img/li5.jpg);
+  background-image: url(../img/li6.jpg);
 }
 
 /* line 4, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
 .breadcam_bg_2 {
-  background-image: url(../img/li5.jpg);
+  background-image: url(../img/li6.jpg);
 }
 
 /* line 7, ../../Arafath/CL/Cl November/221. Music/HTML/scss/_bradcam.scss */
@@ -7425,5 +7425,46 @@ h6 {
   .member-card p {
     font-size: 9px;
   }
+}
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #25D366;
+  box-shadow: 0 0 5px rgba(37, 211, 102, 0.3);
+}
+
+.send-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #25D366;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background: #1ebe5d;
 }
 /*# sourceMappingURL=style.css.map */
